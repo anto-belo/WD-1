@@ -11,7 +11,7 @@ public class Task5 implements LabTask {
 
     @Override
     public void execute() {
-        System.out.println("For " + Arrays.toString(a) + " K = "
+        System.out.print("For " + Arrays.toString(a) + " K = "
                 + countEqualOrLessThenPrevElements());
     }
 
