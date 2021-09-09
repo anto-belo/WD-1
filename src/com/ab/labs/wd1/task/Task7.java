@@ -11,9 +11,10 @@ public class Task7 implements LabTask {
 
     @Override
     public void execute() {
+        System.out.println("--- 7 ---");
         System.out.print(Arrays.toString(a) + " -> ");
         sortArray();
-        System.out.print(Arrays.toString(a));
+        System.out.println(Arrays.toString(a));
     }
 
     private void sortArray() {

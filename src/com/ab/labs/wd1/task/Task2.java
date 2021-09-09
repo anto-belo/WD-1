@@ -11,6 +11,8 @@ public class Task2 implements LabTask {
 
     @Override
     public void execute() {
+        System.out.println("--- 2 ---");
+
         final int x1 = -4;
         final int y1 = 0;
         final int w1 = 8;
@@ -22,7 +24,7 @@ public class Task2 implements LabTask {
         final int h2 = 3;
 
         boolean result = inRectangle(x1, y1, w1, h1) || inRectangle(x2, y2, w2, h2);
-        System.out.printf("Point (%d, %d) is in the specified area: %s", x, y, result);
+        System.out.printf("Point (%d, %d) is in the specified area: %s\n", x, y, result);
     }
 
     private boolean inRectangle(int rectStartX, int rectStartY,

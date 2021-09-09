@@ -6,6 +6,8 @@ import com.ab.labs.wd1.storage.Basket;
 public class Task9 implements LabTask {
     @Override
     public void execute() {
+        System.out.println("--- 9 ---");
+
         Basket b = new Basket();
         b.addBalls(
                 new Ball("blue", 120),

@@ -15,7 +15,8 @@ public class Task1 implements LabTask {
 
     @Override
     public void execute() {
-        System.out.printf("f(%d, %d) = %f", x, y, solveExpression());
+        System.out.println("--- 1 ---");
+        System.out.printf("f(%d, %d) = %f\n", x, y, solveExpression());
     }
 
     private double solveExpression() {

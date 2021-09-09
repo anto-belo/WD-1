@@ -12,6 +12,8 @@ public class Task4 implements LabTask {
 
     @Override
     public void execute() {
+        System.out.println("--- 4 ---");
+
         System.out.print("In " + Arrays.toString(a)
                 + " primary numbers are under indexes: ");
         boolean isAnyPrimary = false;
@@ -22,7 +24,9 @@ public class Task4 implements LabTask {
             }
         }
         if (!isAnyPrimary) {
-            System.out.print("[no primary]");
+            System.out.println("[no primary]");
+        } else {
+            System.out.println();
         }
     }
 

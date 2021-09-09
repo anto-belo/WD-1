@@ -9,12 +9,14 @@ public class Task6 implements LabTask {
 
     @Override
     public void execute() {
+        System.out.println("--- 6 ---");
+
         int[][] b = createMatrix();
         for (int i = 0; i < a.length; i++) {
-            System.out.println();
             for (int j = 0; j < a.length; j++) {
                 System.out.printf("%2d ", b[i][j]);
             }
+            System.out.println();
         }
     }
 

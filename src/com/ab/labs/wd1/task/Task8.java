@@ -13,12 +13,14 @@ public class Task8 implements LabTask {
 
     @Override
     public void execute() {
+        System.out.println("--- 8 ---");
+
         System.out.println("a = " + Arrays.toString(a));
         System.out.println("b = " + Arrays.toString(b));
-        System.out.print("Places to insert b in a: ");
+        System.out.println("Places to insert b in a: ");
         int[] positions = findPlacesToInsert();
         for (int i = 0; i < positions.length; i++) {
-            System.out.printf("\nb[%d] = %d after %d", i, b[i], positions[i]);
+            System.out.printf("b[%d] = %d after %d\n", i, b[i], positions[i]);
         }
     }
 

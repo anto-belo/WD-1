@@ -8,6 +8,8 @@ import java.util.List;
 public class Task15 implements LabTask {
     @Override
     public void execute() {
+        System.out.println("--- 15 ---");
+
         List<Book> books = new ArrayList<>();
         books.add(new Book("AAA", "A.B.", 120, "2-3556-3234-2"));
         books.add(new Book("BBB", "A.B.", 130, "1-3436-3753-7"));
@@ -16,6 +18,8 @@ public class Task15 implements LabTask {
 
         System.out.println("Before sorting by isbn:");
         books.forEach(System.out::println);
+        System.out.println();
+
         System.out.println("After sorting by isbn:");
         books.stream().sorted().forEach(System.out::println);
     }

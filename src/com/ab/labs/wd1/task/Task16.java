@@ -9,6 +9,8 @@ import java.util.List;
 public class Task16 implements LabTask {
     @Override
     public void execute() {
+        System.out.println("--- 16 ---");
+
         List<Book> books = new ArrayList<>();
         books.add(new Book("BB", "D", 142, "3-4545-2345-5"));
         books.add(new Book("A", "B", 120, "2-3556-3234-2"));
@@ -31,18 +33,22 @@ public class Task16 implements LabTask {
 
         System.out.println("Before sorting:");
         books.forEach(System.out::println);
+        System.out.println();
 
         books.sort(titleComparator);
         System.out.println("Sorted by title:");
         books.forEach(System.out::println);
+        System.out.println();
 
         books.sort(titleAndAuthorComparator);
         System.out.println("Sorted by title, then author:");
         books.forEach(System.out::println);
+        System.out.println();
 
         books.sort(authorAndTitleComparator);
         System.out.println("Sorted by author, then title:");
         books.forEach(System.out::println);
+        System.out.println();
 
         books.sort(authorTitleAndPriceComparator);
         System.out.println("Sorted by author, then title, then price:");

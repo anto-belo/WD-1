@@ -13,16 +13,17 @@ public class Task3 implements LabTask {
 
     @Override
     public void execute() {
+        System.out.println("--- 3 ---");
         System.out.print(createTable());
     }
 
     private String createTable() {
-        StringBuilder table = new StringBuilder("\n x | tan \n");
-        table.append("---------");
+        StringBuilder table = new StringBuilder(" x | tan \n");
+        table.append("---------\n");
         double step = a;
         double iterationsCount = Math.floor((b - a) / h);
         for (int i = 0; i <= iterationsCount; i++) {
-            table.append(String.format("\n| %.3f | %.3f", step, Math.tan(step)));
+            table.append(String.format("| %.3f | %.3f\n", step, Math.tan(step)));
             step += h;
         }
         return table.toString();
